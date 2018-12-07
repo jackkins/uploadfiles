@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteBase /files/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([A-Za-z0-9-]+)$ index.php?page=$1 [QSA,L]
+RewriteRule ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)$ index.php?page=$1&action=$2 [QSA,L]

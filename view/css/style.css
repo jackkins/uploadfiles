@@ -1,0 +1,48 @@
+.preUploads{
+	width: 100%;
+}
+.preUploads .tabs{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+.preUploads .tabs > div{
+	width: 20%;
+}
+.preUploads .rows{
+
+}
+.preUploads .rows .item{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+
+}
+.preUploads .rows .item .loading{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 0%;
+    background: #34d25685;
+    border-radius: 5px;
+    z-index: -1;
+    transition: .3s;
+}
+.preUploads .rows .item > div{
+	width: 20%;
+	display: flex;
+	align-items: center;
+}
+.js-cancel{
+	display: none;
+}
+.preUploads .rows .item .file_icon img{
+	max-width: 30%;
+}
+
+input[disabled='disabled'], button[disabled='disabled']{
+	opacity: .5;
+}
