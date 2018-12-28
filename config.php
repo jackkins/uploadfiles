@@ -5,9 +5,9 @@ define("DIR", __DIR__);
 define("PREFOLDER","/files");
 #Database
 
-define("DB_NAME", "files");
-define("DB_HOST", "localhost");
-define("DB_USER_NAME", "root");
+define("DB_NAME", "");
+define("DB_HOST", "");
+define("DB_USER_NAME", "");
 define("DB_USER_PASSWORD", "");
 
 #Mail
